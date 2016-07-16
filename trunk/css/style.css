@@ -1,13 +1,39 @@
+body{
+    font-size:16px;
+}
+p{
+    padding: 15px 0px;
+}
 .navbar{
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .btn-link{
+    color:#fff;
+}
+.navbar-default .btn-link:hover{
+    color:#fff;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+    font-size: 40px;
+    transition: all linear 0.3s;
+}
+.carousel-message-head{
+    font-size:28px;
+}
+body.scroll .navbar{
     background-color: rgba(255,255,255,0.91);
 }
-.navbar-brand {
+body.scroll .navbar-default .navbar-brand {
     color: #345;
     font-size: 30px;
-    text-transform: uppercase;
 }
-.navbar-brand:hover{
-    color: #345;
+body.scroll .navbar-default .btn-link{
+    color:#00b0ff;
+}
+body.scroll .navbar-default .btn-link:hover{
+    color:#00b0ff;
 }
 .side-container{
     position: absolute;
@@ -16,9 +42,18 @@
     right:10px;
     text-align: right;
 }
+.side-container .service-item{
+    transition: transform linear 0.5s;
+    margin-bottom: 20px;
+    
+}
+.side-container .service-item:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
 .carousel-caption{
     top:125px;
     text-align: left;
+    max-width:500px;
 }
 .light-container{
     padding: 15px 0px;
@@ -29,23 +64,45 @@
     background-color: #464646;
     color:#fff;
 }
+.white-container{
+    padding: 15px 0px;
+    background-color: #fff;
+}
 li.highlight{
     list-style: none;
 }
+li.highlight.lhgh {
+    text-align: right;
+}
+li.highlight.rhgh {
+    text-align: left;
+}
 .plan{
     background-color: #fff;
-    border-radius:5px;
     padding:15px 10px;
+    box-shadow: 1px 3px 3px #d1d1d1;
+    margin-bottom: 10px;
 }
 .team-player .item{
-    padding: 10px;
+    padding: 20px;
     width:30%;
     margin-left:1%;
-    border-radius: 5px;
     background-color: #fff;
     display: inline-block;
     margin-bottom:15px;
     color:#111;
+    box-shadow: 1px 3px 3px #d9d9d9;
+}
+.team-player .item .icon{
+    width:16px;
+    height:16px;
+    font-size: 12px;
+    vertical-align: middle;
+    border:1px solid #999;
+    color:#999;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px 7px;
 }
 a{
     color:#00b0ff;
@@ -58,4 +115,128 @@ a{
 }
 .top-navbar li{
     padding: 5px;
+}
+.no-touch .slide-item{
+    position:relative;
+    opacity:0;
+    transition: all linear 1s;
+}
+.no-touch .slide-item.revealed{
+    opacity:1;
+}
+.no-touch .slide-item[data-direction="top"]{
+    top:50px;
+}
+.no-touch .slide-item.revealed[data-direction="top"]{
+    top:0px;
+}
+.no-touch .slide-item[data-direction="right"]{
+    right:100px;
+}
+.no-touch .slide-item.revealed[data-direction="right"]{
+    right:0px;
+}
+.no-touch .slide-item[data-direction="left"]{
+    left:-100px;
+}
+.no-touch .slide-item.revealed[data-direction="left"]{
+    left:0px;
+}
+.no-touch .slide-item[data-direction="bottom"]{
+    bottom:-50px;
+}
+.no-touch .slide-item.revealed[data-direction="bottom"]{
+    bottom:0px;
+}
+.mobile-cover{
+    background-image: url(./../img/phone-white.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 250px 100%;
+    width: 250px;
+    margin: auto;
+}
+.inner-screen{
+    overflow: hidden;
+    white-space: nowrap;
+    height: calc(100% - 72px);
+    padding-top: 38px;
+    width: calc(100% - 60px);
+    margin: auto;
+}
+.inner-screen img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    transition: all linear 0.3s;
+}
+.highlight-title .fa{
+    border-radius: 100%;
+    background-color: dodgerblue;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 12px;
+    transition: transform linear 0.5s;
+}
+.highlight h3:after{
+    content: ' ';
+    width:0px;
+    height:2px;
+    display: block;
+    position: relative;
+    bottom: -10%;
+    background:crimson;
+    transition: all linear 0.3s;
+}
+.highlight:hover .fa, .highlight.highlighted .fa{
+    transform: scale3d(0.8,0.8,0.8);
+    background-color: crimson;
+}
+.highlight:hover h3:after, .highlight.highlighted h3:after{
+    width:100%;
+}
+.btn-flat{
+    border-radius: 0px;
+    box-shadow: 1px 3px 3px rgba(15,15,15,0.1);
+}
+footer ul li {
+    padding: 20px;
+    font-size: 18px;
+}
+section h1{
+    color:#88b7b3;
+}
+.display-pic {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #e6e6e6;
+    border-radius: 100%;
+    padding: 5px 8px;
+}
+@media (max-width:767px) {
+    body{
+        font-size: 12px;
+    }
+    .carousel-caption{
+        top:30px;
+        left:10px;
+        right:10px;
+        max-width:auto;
+        width:90%;
+    }
+    .carousel-message-head{
+        font-size:14px;
+    }
+    p{
+        padding: 0px;
+    }
+    .team-player .item{
+        width: 90%;
+    }
 }
