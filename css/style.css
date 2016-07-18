@@ -219,6 +219,12 @@ section h1{
     border-radius: 100%;
     padding: 5px 8px;
 }
+.modal-content{
+    border-radius: 0;
+}
+.modal-backdrop.in{
+    opacity:0.85;
+}
 @media (max-width:767px) {
     body{
         font-size: 12px;
@@ -238,5 +244,10 @@ section h1{
     }
     .team-player .item{
         width: 90%;
+    }
+}
+@media (min-width:768px) {
+    .modal-content{
+        margin-top:150px;
     }
 }

@@ -43,17 +43,17 @@
         <div class="side-container">
             <div class="service-container">
                 <a href="#">
-                    <div class="col-md-12">
+                    <div>
                         <img class="service-item" src="img/logistics2.png" alt="Logistics">
                     </div>
                 </a>
                 <a href="#">
-                    <div class="col-md-12">
+                    <div>
                         <img class="service-item" src="img/icon-3-deals.png" alt="Deals">
                     </div>
                 </a>
                 <a href="#">
-                    <div class="col-md-12">
+                    <div>
                         <img class="service-item" src="img/how-it-works.png" alt="How it works">
                     </div>
                 </a>
@@ -395,59 +395,54 @@
     </footer>
     <div class="modal fade" id="contactform" tabindex="-1" role="dialog">        
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content modal-sm center-block">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Get in touch with us</h4>
                 </div>
                 <div class="modal-body">
-                    <form name="sentMessage" class="contactForm" novalidate>
+                    <form name="sentMessage" class="contactForm">
                         <div class="control-group">
-                            <div class="controls">
+                            <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
-                                <p class="help-block"></p>
                             </div>
                         </div>
                         <div class="control-group">
-                            <div class="controls">
+                            <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <div class="controls">
+                            <div class="form-group">
                                 <textarea rows="3" cols="10" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                             </div>
                         </div>
                         <div id="success"></div>
-                        <div class="submit-button">
-                            <button type="submit" class="btn btn-primary">Send your message</button>
+                        <div class="submit-button text-center">
+                            <button type="submit" class="btn btn-info btn-flat">Send your message</button>
                         </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>    
     <div class="modal fade" id="loginform" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content modal-sm center-block">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Login</h4>
                 </div>
                 <div class="modal-body">
                     <form class="contactForm" novalidate>
-                        <div class='user'>
-                            <input name='username' placeholder='Email' type='text'>
+                        <div class='form-group'>
+                            <input class="form-control" name='username' placeholder='Email' type='text'>
                         </div>
-                        <div class='pw'>
-                            <input name='password' placeholder='Password' type='password'>
+                        <div class='form-group'>
+                            <input class="form-control" name='password' placeholder='Password' type='password'>
                         </div>
-                        <div class='submit'>
-                            <input type='submit' value='Login'>
+                        <div class='form-group text-center'>
+                            <button type='submit' class="btn btn-success btn-flat btn-lg">Login</button>
                         </div>
                         <div class='forgot'>
                             <p>
@@ -456,48 +451,40 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
             </div>
         </div>
     </div>    
     <div class="modal fade" id="signupform" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content modal-sm center-block">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Sign Up</h4>
                 </div>
                 <div class="modal-body">
                     <form class="contactForm" novalidate>
-                        <div class='fullname'>
-                            <input name='fullname' placeholder='Full Name' type='text'>
+                        <div class='form-group'>
+                            <input class="form-control" name='fullname' placeholder='Full Name' type='text'>
                         </div>
-                        <div class='user'>
-                            <input name='username' placeholder='Email' type='text'>
+                        <div class='form-group'>
+                            <input class="form-control" name='username' placeholder='Email' type='text'>
                         </div>
-                        <div class='pw'>
-                            <input name='password' placeholder='Password' type='password'>
+                        <div class='form-group'>
+                            <input class="form-control" name='password' placeholder='Password' type='password'>
                         </div>
-                        <div class='pw'>
-                            <input name='repeat-password' placeholder='Repeat Password' type='password'>
+                        <div class='form-group'>
+                            <input class="form-control" name='repeat-password' placeholder='Repeat Password' type='password'>
                         </div>
-                        <div class='submit'>
-                            <input type='submit' value='Sign up'>
+                        <div class='form-group text-center'>
+                            <button class="btn btn-success btn-lg btn-flat" type='submit'>Sign up</button>
                         </div>
-                        <div class='forgot'>
+                        <div class='form-group'>
                             <p>
                                 By signing up you agree with our
                                 <br><a href="#">Terms & Conditions</a>.
                             </p>
                         </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
